@@ -1,0 +1,41 @@
+//------------------------------------------------
+//--- 010 Editor v8.0.1 Binary Template
+//
+//      File: 
+//   Authors: 
+//   Version: 
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+
+local uint i;
+
+UINT16 Count;
+
+typedef struct {
+  UINT16 Unknown;
+  UINT16 Unknown;
+  FLOAT Unknown;
+  FLOAT Unknown; 
+  FLOAT Unknown;
+  FLOAT Unknown;
+  UINT16 Unknown;
+  UINT16 Unknown;
+  UINT Unknown;
+  UINT Unknown;
+  FLOAT Unknown;
+  FLOAT Unknown; 
+  FLOAT Unknown;
+  FLOAT Unknown;
+  UINT16 Unknown;
+  UINT16 Unknown;
+  UINT Unknown;
+} FILE_REC;
+
+FILE_REC FileRec[Count];
+
+// 256X256, RGBA4444

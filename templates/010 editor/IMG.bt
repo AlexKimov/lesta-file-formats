@@ -1,0 +1,41 @@
+//------------------------------------------------
+//--- 010 Editor v8.0.1 Binary Template
+//
+//      File: 
+//   Authors: 
+//   Version: 
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+CHAR Magic[5];
+
+UINT16 Width;
+UINT16 Height;
+UINT DataSize;
+
+while (1) 
+{
+  FSkip(1);
+  if (ReadInt(FTell()) != 0)
+  { 
+    FSkip(3);
+    break;
+  }
+} 
+
+while (ReadInt(FTell()))
+  struct {
+    UINT16 Count;
+    struct {
+      UINT16 Y;
+      UINT16 X;
+      UINT FileOffset;
+    } B[Count];
+  } LINE;
+
+FSeek(FileSize() - DataSize);
+UBYTE DATA[DataSize];
