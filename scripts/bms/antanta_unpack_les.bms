@@ -1,0 +1,14 @@
+comtype zlib
+
+goto 4
+get FILE_COUNT long
+goto 12
+
+For i = 0 < FILE_COUNT
+    getdstring NAME 32
+    goto 4 0 SEEK_CUR
+    get FILE_SIZE_COMPRESSED long
+    get FILE_SIZE long
+    get FILE_OFFSET long    
+    clog NAME FILE_OFFSET FILE_SIZE_COMPRESSED FILE_SIZE 
+next i
