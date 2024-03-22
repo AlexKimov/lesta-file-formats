@@ -17,25 +17,18 @@ UINT16 Width;
 UINT16 Height;
 UINT DataSize;
 
-while (1) 
-{
-  FSkip(1);
-  if (ReadInt(FTell()) != 0)
-  { 
-    FSkip(3);
-    break;
-  }
-} 
+local uint rowNum;
 
-while (ReadInt(FTell()))
+while (rowNum < Height) {
+  rowNum += 1;
   struct {
     UINT16 Count;
     struct {
-      UINT16 Y;
-      UINT16 X;
+      UINT16 xStart;
+      UINT16 xEnd;
       UINT FileOffset;
-    } B[Count];
-  } LINE;
+    } DATA[Count]<optimize=false>;
+  } ROW;
+}
 
-FSeek(FileSize() - DataSize);
 UBYTE DATA[DataSize];

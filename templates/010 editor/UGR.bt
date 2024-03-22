@@ -18,12 +18,12 @@ UBYTE Count2;
 
 struct {
   typedef struct {
-    UINT16 OffsetX;
-    UINT16 OffsetY;
+    UINT16 OffsetX; 
+    UINT16 OffsetY; 
     UINT16 ColCount;
     UINT16 RowCount;
     UINT16 ImageWidth; 
-    UINT16 ImageHeight;
+    UINT16 ImageU;
     UINT Size;
     UINT Offset;
   } FILE_REC;
@@ -43,7 +43,7 @@ struct {
           while (size) 
           {
             struct {
-              BYTE Data[FileRec[index].RowCount * 2];
+              BYTE Data[FileRec[index].ColCount * 2];
             } LINE;
             size -= sizeof(LINE);
           }

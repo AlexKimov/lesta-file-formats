@@ -32,10 +32,16 @@ typedef struct {
   FLOAT Unknown;
   FLOAT Unknown;
   UINT16 Unknown;
-  UINT16 Unknown;
   UINT Unknown;
+  UINT16 Unknown;
 } FILE_REC;
 
 FILE_REC FileRec[Count];
 
 // 256X256, RGBA4444
+
+UBYTE Count;
+
+  struct {
+    BYTE Data[256*256*2];
+  } FILE[Count];
