@@ -18,11 +18,11 @@
 | № | Формат  | Инструмент |  Программа   |   Описание |
 | :--- | :--------- | :----------- | :---------- | :---------- | 
 | 1 | .les | [antanta_unpack_les.bms](https://github.com/AlexKimov/lesta-file-formats/tree/main/scripts/bms/antanta_unpack_les.bms)  | quickbms | Распаковка архива игровых ресурсов |
-| 2 | .444 | [fmt_ant_444.py](https://github.com/AlexKimov/)  | noesis | Просмотр .444 файлов |
-| 3 | .egr | [fmt_ant_egr.py](https://github.com/AlexKimov/)  | noesis | Просмотр изображений эффекторв |
-| 4 | .img | [fmt_ant_img.py](https://github.com/AlexKimov/)  | noesis | Просмотр изображений зданий |
-| 5 | .ogr | [fmt_ant_ogr.py](https://github.com/AlexKimov/)  | noesis | Просмотр изображений объектов |
-| 6 | .ugr | [fmt_ant_ugr.py](https://github.com/AlexKimov/)  | noesis | Просмотр изображений юнитов |
+| 2 | .444 | [fmt_ant_444.py](https://github.com/AlexKimov/lesta-file-formats/tree/main/plugins/noesis/fmt_ant_444.py)  | noesis | Просмотр .444 файлов |
+| 3 | .egr | [fmt_ant_egr.py](https://github.com/AlexKimov/lesta-file-formats/tree/main/plugins/noesis/fmt_ant_egr.py)  | noesis | Просмотр изображений эффекторв |
+| 4 | .img | [fmt_ant_img.py](https://github.com/AlexKimov/lesta-file-formats/tree/main/plugins/noesis/fmt_ant_img.py)  | noesis | Просмотр изображений зданий |
+| 5 | .ogr | [fmt_ant_ogr.py](https://github.com/AlexKimov/lesta-file-formats/tree/main/plugins/noesis/fmt_ant_ogr.py)  | noesis | Просмотр изображений объектов |
+| 6 | .ugr | [fmt_ant_ugr.py](https://github.com/AlexKimov/lesta-file-formats/tree/main/plugins/noesis/fmt_ant_ugr.py)  | noesis | Просмотр изображений юнитов |
 
     Как использовать quickbms скрипты
     1. Нужен quickbms https://aluigi.altervista.org/quickbms.htm
