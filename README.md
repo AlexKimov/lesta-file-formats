@@ -9,7 +9,7 @@
 Часть игровых файлов помещена в архив с раширением .les. Для сжатия применен DEFLATE.
 
 ###### Графика  
-В игре используется двухмерная изометрическая графика на основе изображений, полученных из 
+В игре используется двухмерная изометрическая графика на основе изображений, полученных из 
 трехмерных моделей. Для хранения создано несколько форматов (.egr, .ogr, .ugr и другие), некоторые из которых используют
 сжатие данных на основе RLE.  
 
@@ -40,14 +40,14 @@
 | 2 | .img  | [IMG.bt](https://github.com/AlexKimov/lesta-file-formats/blob/main/templates/010%20editor/IMG.bt) | изображения зданий |
 | 3 | .les  | [LES.bt](https://github.com/AlexKimov/lesta-file-formats/blob/main/templates/010%20editor/LES.bt) | архив игровых ресурсов |
 | 4 | .ogr  | [OGR.bt](https://github.com/AlexKimov/lesta-file-formats/blob/main/templates/010%20editor/OGR.bt) | изображения объектов |
-| 5 | .ugr  | [UGR.bt](https://github.com/AlexKimov/lesta-file-formats/blob/main/templates/010%20editor/UGR.bt) | изображения юнитов |
+| 5 | .ugr  | [UGR.bt](https://github.com/AlexKimov/lesta-file-formats/blob/main/templates/010%20editor/UGR.bt) | изображения юнитов |
 
 ## Инструменты
 
 ### Quickbms
 
 | № | Формат  | Инструмент |    Описание |
-| :--- | :--------- | :----------- | :---------- | :---------- | 
+| :--- | :--------- | :----------- | :---------- | 
 | 1 | .les | [antanta_unpack_les.bms](https://github.com/AlexKimov/lesta-file-formats/tree/main/scripts/bms/antanta_unpack_les.bms)  | quickbms | Распаковка архива игровых ресурсов |
 
 
@@ -60,7 +60,7 @@
 ### Noesis
 
 | № | Формат  | Инструмент |     Описание |
-| :--- | :--------- | :----------- | :---------- | :---------- | 
+| :--- | :--------- | :----------- | :---------- | 
 | 2 | .444 | [fmt_ant_444.py](https://github.com/AlexKimov/lesta-file-formats/tree/main/plugins/noesis/fmt_ant_444.py)  | Просмотр .444 файлов |
 | 3 | .egr | [fmt_ant_egr.py](https://github.com/AlexKimov/lesta-file-formats/tree/main/plugins/noesis/fmt_ant_egr.py)  | Просмотр изображений эффекторв .egr |
 | 4 | .img | [fmt_ant_img.py](https://github.com/AlexKimov/lesta-file-formats/tree/main/plugins/noesis/fmt_ant_img.py)  | Просмотр изображений зданий .img |
